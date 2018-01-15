@@ -3,9 +3,29 @@
 
 @import "{{ site.theme }}";
 
+$conifer: #b5e853;
+
 body {
-  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/dark_mosaic.png')
+  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/dark_mosaic.png');
 }
 header {
-  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/subtle_carbon.png')
+  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/subtle_carbon.png');
+  a:hover {
+    color: $conifer;
+    text-decoration: none;
+  }
+}
+.prompt {
+  color: $conifer;
+  margin: 0 -0.5em 0 0;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+}
+.prompt-body {
+  background-attachment: fixed;
+  float: left;
+  color: $conifer;
+  width: -webkit-calc(50% - 300px);
+  width: -moz-calc(50% - 300px);
+  width: calc(50% - 300px - 1em);
+  text-align: right;
 }
